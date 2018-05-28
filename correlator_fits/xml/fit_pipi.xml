@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<fit>
+  <fitter>
+    <algorithm>NM</algorithm>
+    <numerical_derivs>0</numerical_derivs>
+    <max_iter>100000</max_iter>
+    <xtol>1.0E-5</xtol>
+    <gtol>1.0E-5</gtol>
+    <ftol>1.0E-5</ftol>
+  </fitter>
+  <Lattice>
+    <L>24</L>
+    <T>64</T>
+    <traj_start>1000</traj_start>
+    <traj_end>2140</traj_end>
+    <traj_inc>20</traj_inc>
+  </Lattice>
+ 
+  <correlator>
+    <resample>1</resample>
+    <t_min>4</t_min>
+    <t_max>15</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/Epp-1.I2.fold</data_stem>
+    <fit_type>cosh_two_pion_3</fit_type>
+    <parameter_guesses>
+      <p0 name="Zpp-1.I2">9.91E8</p0>
+      <p1 name="Epp-1.I2">0.560</p1>
+      <p2 name="Cpp-1.I2">1E-5</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/Epp-1.I2.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+ 
+  <correlator>
+    <resample>1</resample>
+    <t_min>4</t_min>
+    <t_max>15</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/Epp-0.I2.fold</data_stem>
+    <fit_type>cosh_two_pion_3</fit_type>
+    <parameter_guesses>
+      <p0 name="Zpp-0.I2">9.91E8</p0>
+      <p1 name="Epp-0.I2">0.280</p1>
+      <p2 name="Cpp-0.I2">1E-5</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/Epp-0.I2.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+
+  <Constraints>
+  </Constraints>
+  
+  <save_jacks>1</save_jacks>
+  <jacks_dir>./results/fit_params</jacks_dir>
+</fit>

@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<fit>
+  <fitter>
+    <algorithm>NM</algorithm>
+    <numerical_derivs>0</numerical_derivs>
+    <max_iter>80000</max_iter>
+    <xtol>1.0e-07</xtol>
+    <gtol>1.0e-07</gtol>
+    <ftol>1.0e-07</ftol>
+  </fitter>
+	<Lattice>
+	  <L>24</L>
+	  <T>64</T>
+		<traj_start>1000</traj_start>
+		<traj_end>2140</traj_end>
+		<traj_inc>20</traj_inc>
+  </Lattice>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>9</t_min>
+    <t_max>31</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/pion-00WP.fold</data_stem>
+    <fit_type>cosh_pp</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiLW">60000</p0>
+      <p1 name="mpi">0.135</p1>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/pion-00WP.dat</eff_mass_stem>
+    </eff_mass>
+	</correlator>
+
+	<correlator>
+    <resample>1</resample>
+		<t_min>9</t_min>
+		<t_max>31</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/pion-00WW.fold</data_stem>
+    <fit_type>cosh_pp</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiWW">700000</p0>
+      <p1 name="mpi">0.300</p1>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/pion-00WW.dat</eff_mass_stem>
+    </eff_mass>
+	</correlator>
+  
+  <correlator>
+    <resample>1</resample>
+		<t_min>11</t_min>
+		<t_max>26</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/fp-00WP.fold</data_stem>
+    <fit_type>cosh_decay</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiWW">2150</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="ZA">0.771</p2>
+      <p3 name="fpi">0.152</p3>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/fp-00WP.dat</eff_mass_stem>
+    </eff_mass>
+	</correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>11</t_min>
+		<t_max>26</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/kaon-00WP.fold</data_stem>
+    <fit_type>cosh_pp</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKLW">60000</p0>
+      <p1 name="mK">0.529</p1>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/kaon-00WP.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>10</t_min>
+		<t_max>24</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/kaon-00WW.fold</data_stem>
+    <fit_type>cosh_pp</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">700000</p0>
+      <p1 name="mK">0.529</p1>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/kaon-00WW.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+	<correlator>
+    <resample>1</resample>
+		<t_min>11</t_min>
+		<t_max>26</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/fk-00WP.fold</data_stem>
+    <fit_type>cosh_decay</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">2494</p0>
+      <p1 name="mK">0.529</p1>
+      <p2 name="ZA">0.771</p2>
+      <p3 name="fK">0.152</p3>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>1</subtract_thermal_state>
+      <eff_mass_type>sinh</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/fk-00WP.dat</eff_mass_stem>
+    </eff_mass>
+	</correlator>
+
+  <correlator>
+    <resample>0</resample>
+		<t_min>11</t_min>
+		<t_max>53</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/za_0.00107.ratio</data_stem>
+    <fit_type>constant</fit_type>
+    <parameter_guesses>
+      <p0 name="ZA">0.771</p0>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/za_0.00107.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>4</t_min>
+		<t_max>4</t_max>
+    <t_sep>8</t_sep>
+    <data_stem>../processed_data/zpa-00.8</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiWW">2150</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="ZVp">7.06288814e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zpa-00.8.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>4</t_min>
+		<t_max>8</t_max>
+    <t_sep>12</t_sep>
+    <data_stem>../processed_data/zpa-00.12</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiWW">2150</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="ZVp">7.1e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zpa-00.12.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>4</t_min>
+		<t_max>12</t_max>
+    <t_sep>16</t_sep>
+    <data_stem>../processed_data/zpa-00.16</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZpiWW">2150</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="ZVp">7.1e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zpa-00.16.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>5</t_min>
+		<t_max>13</t_max>
+    <t_sep>18</t_sep>
+    <data_stem>../processed_data/zka-00.18</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">2494</p0>
+      <p1 name="mK">0.529</p1>
+      <p2 name="ZVK">7.08197810e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zka-00.18.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>5</t_min>
+		<t_max>14</t_max>
+    <t_sep>19</t_sep>
+    <data_stem>../processed_data/zka-00.19</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">2494</p0>
+      <p1 name="mK">0.529</p1>
+      <p2 name="ZVK">7.08197810e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zka-00.19.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>5</t_min>
+		<t_max>15</t_max>
+    <t_sep>20</t_sep>
+    <data_stem>../processed_data/zka-00.20</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">2494</p0>
+      <p1 name="mK">0.529</p1>
+      <p2 name="ZVK">7.1e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zka-00.20.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>1</resample>
+		<t_min>5</t_min>
+		<t_max>16</t_max>
+    <t_sep>21</t_sep>
+    <data_stem>../processed_data/zka-00.21</data_stem>
+    <fit_type>zv</fit_type>
+    <parameter_guesses>
+      <p0 name="ZKWW">2494</p0>
+      <p1 name="mK">0.529</p1>
+      <p2 name="ZVK">7.1e-01</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/zka-00.21.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+    
+  <correlator>
+    <resample>0</resample>
+		<t_min>2</t_min>
+		<t_max>14</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/RppWW-1.I2.fold</data_stem>
+    <fit_type>ratio_two_pion</fit_type>
+    <parameter_guesses>
+      <p0 name="App-1.I2">1.49755670e-06</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="dEpp-1.I2">2.79162854e-03</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/RppWW-1.I2.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <correlator>
+    <resample>0</resample>
+		<t_min>2</t_min>
+		<t_max>28</t_max>
+    <t_sep>0</t_sep>
+    <data_stem>../processed_data/RppWW-0.I2.fold</data_stem>
+    <fit_type>ratio_two_pion</fit_type>
+    <parameter_guesses>
+      <p0 name="App-0.I2">1.5000</p0>
+      <p1 name="mpi">0.300</p1>
+      <p2 name="dEpp-0.I2">0.0024</p2>
+    </parameter_guesses>
+    <eff_mass>
+      <compute_eff_mass>1</compute_eff_mass>
+      <subtract_thermal_state>0</subtract_thermal_state>
+      <eff_mass_type>constant</eff_mass_type>
+      <eff_mass_stem>./results/eff_mass/RppWW-0.I2.dat</eff_mass_stem>
+    </eff_mass>
+  </correlator>
+
+  <Constraints>
+    
+   <param_bind>
+      <corr_1>10</corr_1>
+      <param_1>2</param_1>
+      <corr_2>11</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>10</corr_1>
+      <param_1>2</param_1>
+      <corr_2>12</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>10</corr_1>
+      <param_1>2</param_1>
+      <corr_2>13</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>4</corr_1>
+      <param_1>0</param_1>
+      <corr_2>5</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>4</corr_1>
+      <param_1>0</param_1>
+      <corr_2>10</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>4</corr_1>
+      <param_1>0</param_1>
+      <corr_2>11</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>4</corr_1>
+      <param_1>0</param_1>
+      <corr_2>12</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>4</corr_1>
+      <param_1>0</param_1>
+      <corr_2>13</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>2</corr_1>
+      <param_1>2</param_1>
+      <corr_2>5</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>2</corr_1>
+      <param_1>2</param_1>
+      <corr_2>6</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>4</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>5</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>10</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>11</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>12</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>3</corr_1>
+      <param_1>1</param_1>
+      <corr_2>13</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>7</corr_1>
+      <param_1>2</param_1>
+      <corr_2>8</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>7</corr_1>
+      <param_1>2</param_1>
+      <corr_2>9</corr_2>
+      <param_2>2</param_2>
+    </param_bind><param_bind>
+      <corr_1>1</corr_1>
+      <param_1>0</param_1>
+      <corr_2>2</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>1</corr_1>
+      <param_1>0</param_1>
+      <corr_2>7</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>1</corr_1>
+      <param_1>0</param_1>
+      <corr_2>8</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>1</corr_1>
+      <param_1>0</param_1>
+      <corr_2>9</corr_2>
+      <param_2>0</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>1</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>2</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>7</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>8</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>9</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>14</corr_2>
+      <param_2>1</param_2>
+    </param_bind><param_bind>
+      <corr_1>0</corr_1>
+      <param_1>1</param_1>
+      <corr_2>15</corr_2>
+      <param_2>1</param_2>
+    </param_bind></Constraints>
+  <save_jacks>1</save_jacks>
+  <jacks_dir>./results/fit_params</jacks_dir>
+</fit>
